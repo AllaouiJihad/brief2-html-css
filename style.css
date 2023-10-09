@@ -2,21 +2,21 @@
     margin: 0;
     padding: 0;
     font-family: 'DM Sans';
+    box-sizing: border-box;
+
 }
 header{
     padding-left: 8%;
     padding-right: 8%;
     margin-top: 3%;
-    box-sizing: border-box;
 }
 .navbar{
     height: 12%;
     display: flex;
     align-self:center;
-    flex-direction: row;
 }
 .logo{
-    width: 50px;
+    width: 170px;
     cursor: pointer;
 }
 nav{
