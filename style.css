@@ -37,6 +37,8 @@ nav ul li{
 }
 
 .article{
+    margin-left: 5%;
+    margin-right: 5%;
     border-radius: 14px;
     position: relative;
     height: 80vh;
