@@ -1,40 +1,16 @@
 *{
+    /* border: 1px solid red; */
     margin: 0;
     padding: 0;
     font-family: 'DM Sans';
+    font-weight: lighter;
     box-sizing: border-box;
 
 }
 a{
     text-decoration: none;
 }
-header{
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-top: 3%;
-}
-.navbar{
-    height: 12%;
-    display: flex;
-    align-self:center;
-}
-.logo{
-    width: 170px;
-    cursor: pointer;
-}
-nav{
-    flex: 1;
-    text-align: right;
-}
-nav ul{
-    display: flex;
-    justify-content: flex-end;
-}
-nav ul li{
-    flex-basis: 100px;    
-    list-style: none;
-    gap: 60px;
-}
+
 
 .article{
     margin-left: 5%;
@@ -82,7 +58,7 @@ nav ul li{
     right: 50%;
     transform: translateX(50%);
 }
-a{
+.btn a{
     color: #FFFFFF;
 }
 .container-cart{
@@ -129,33 +105,39 @@ a{
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 }
 .about p{
-    font-size: 30px;
+    font-size: 20px;
 }
 .top-trend{
-    margin: 2% 5%;
+    margin: 3% 5%;
     display: grid;
+    height: 75vh;
     grid-template-columns: repeat(1,100%);
-    grid-template-rows: 10% 85% 10% 10%;
+    grid-template-rows: 10% 65% 15% ;
 }
 .top-trend img{
     width: 100%;
 }
 .top-trend p{
-    font-size: 30px;
+    font-size: 20px;
 }
 .Produced{
-    margin: 7% 5%;
+    margin: 3% 5%;
     display: grid;
+    height: 75vh;
     grid-template-columns: repeat(1,100%);
-    grid-template-rows: 10% 90% 10% 10%;
+    grid-template-rows: 10% 65% ;
 }
 .Produced img{
     width: 100%;
 }
 .Produced p{
-    font-size: 30px;
+    font-size: 20px;
+}
+
+a:hover{
+    color: black;
 }
 

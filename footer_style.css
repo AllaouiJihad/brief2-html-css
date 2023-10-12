@@ -1,0 +1,45 @@
+
+footer{
+    margin-top: 6%;
+    margin-left: 5%;
+    margin-right: 5%; 
+    margin-bottom: 0;
+}
+.footer{
+    margin-top: 3%;
+    color: #707070;
+    display: grid;
+    grid-template-areas: "info email"
+    ". reseau";
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 20px;
+
+}
+.footer-info{
+    grid-area: info;
+    align-self: center;
+    gap: 10px;
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+}
+.footer-info a{
+    color: #707070;
+}
+.footer-email{
+    grid-area: email;
+    justify-self: end;
+    display: flex;
+    flex-direction: column;
+}
+.footer-email .link{
+    align-self: end;
+}
+.footer-reseau{
+    grid-area: reseau;
+    justify-self: end;
+    width: 150px;
+    display: flex;
+    justify-content:  space-between;
+}

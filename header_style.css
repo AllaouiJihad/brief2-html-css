@@ -1,0 +1,26 @@
+
+header{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 3%;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+}
+.logo{
+    width: 170px;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul li{
+    flex-basis: 100px;    
+    list-style: none;
+}
