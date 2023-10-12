@@ -60,4 +60,54 @@ main{
     width: 150px;
     height: 150px;
 }
+.cart{
+    height: 40vh;
+    margin: 20px auto;
+    width: 80%;
+    padding: 30px 50px;
+    background-color: #DBDBDB;
+    border: 1px solid #F4F4F4;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
 
+}
+.shipping{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around ;
+    height: 150px;
+}
+.shipping h3{
+    font-weight: bold;
+}
+.shipping input{
+    font-size: 555px;
+
+}
+.total button{
+    height: 50px;
+    margin-top: 20px;
+    background-color: #DE6767;
+    box-shadow: 3px 2px 6px 2px #c5c2c2;
+    border: transparent;
+    border-radius: 9px;
+    width: 100%;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 20px;
+}
+.total1{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    height: 100px;
+    width: 250px;
+}
+.total__p{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #7E7E7F;
+}
