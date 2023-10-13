@@ -14,5 +14,76 @@ a:hover{
     color: black;
 }
 main{
-    margin: 3% 5%;
+    margin: 3% 5%; 
+    font-size: 17px;
 }
+  
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid #00472d; */
+  }
+
+  
+  .col
+  {
+    padding: 10px 16px;
+  }
+  .col h3{
+    padding: 10px 0;
+    color: #A18A68;
+  }
+  .container {
+    background-color: #f2f2f2;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 30px;
+  }
+  
+  .btn {
+    background-color: #DE6767;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: #DE6767;
+  }
+  
+  a {
+    color: #7E7E7F;
+  }
+  
+  hr {
+    border: 1px solid lightgrey;
+  }
+  
+  span.price {
+    float: right;
+    color: #7E7E7F;
+  }
+ 
