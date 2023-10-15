@@ -34,17 +34,32 @@ main{
     font-size: 30px;
     display: grid;
     gap: 10px;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(3,auto);
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: repeat(5,auto);
 }
 .table__title{
+    padding: 10px;
+    grid-column: 1/span 4;
+    padding-right: 30px;
+    grid-row: 1/2;
     display: flex;
     font-size: 35px;
     justify-content: space-between;
 }
+hr{
+    grid-row: 2/3   3/4;
+    grid-column: 1/6;
+}
 .table__info{
+    grid-column: 1/ span 5;
     display: flex;
     justify-content: space-between;
+}
+select{
+    height: 30px;
+    width: 40px;
+    border: #A18A68;
+    font-size: 25px;
 }
 .info {
     font-size: 20px;
@@ -89,7 +104,7 @@ main{
 .total button{
     height: 50px;
     margin-top: 20px;
-    background-color: #DE6767;
+    background-color: #a16e68;
     box-shadow: 3px 2px 6px 2px #c5c2c2;
     border: transparent;
     border-radius: 9px;
