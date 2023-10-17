@@ -1,5 +1,5 @@
 *{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     margin: 0;
     padding: 0;
     font-family: 'DM Sans';
@@ -142,8 +142,12 @@ a:hover{
     color: black;
 }
 @media screen and (max-width:600px) {
+     
     nav{
         visibility: hidden;
+    }
+    .article{
+        background: #cdcdcd;
     }
     
 }
