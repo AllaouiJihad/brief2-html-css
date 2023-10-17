@@ -20,7 +20,6 @@ footer{
     align-self: center;
     gap: 10px;
     display: flex;
-    width: 600px;
     justify-content: space-between;
     flex-grow: 1;
 }

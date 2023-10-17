@@ -85,7 +85,7 @@ a{
     margin: 30px;
     min-width: 300px;
     align-self: center;
-    flex-grow: 2;
+    flex-grow: 1;
     text-align: center;
 
 }
@@ -113,26 +113,24 @@ a{
 }
 .top-trend{
     margin: 3% 5%;
-    display: grid;
-    height: 75vh;
-    grid-template-columns: repeat(1,100%);
-    grid-template-rows: 10% 65% 15% ;
+    display: flex;
+    flex-direction: column;
 }
 .top-trend img{
     width: 100%;
+    padding: 10px;
 }
 .top-trend p{
     font-size: 20px;
 }
 .Produced{
     margin: 3% 5%;
-    display: grid;
-    height: 75vh;
-    grid-template-columns: repeat(1,100%);
-    grid-template-rows: 10% 65% ;
+    display: flex;
+    flex-direction: column;
 }
 .Produced img{
     width: 100%;
+    padding: 10px;
 }
 .Produced p{
     font-size: 20px;
