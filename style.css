@@ -38,7 +38,7 @@ a{
     gap: 10px;
 }
 .div1 h1{
-    font-size: 40px;
+    font-size: 10em;
 }
 .btn{
     height: 50px;
@@ -83,7 +83,6 @@ a{
 
 .cart{
     margin: 30px;
-    min-width: 300px;
     align-self: center;
     flex-grow: 1;
     text-align: center;
@@ -109,7 +108,7 @@ a{
     gap: 20px;
 }
 .about p{
-    font-size: 20px;
+    font-size: 1.5em;
 }
 .top-trend{
     margin: 3% 5%;
@@ -121,7 +120,7 @@ a{
     padding: 10px;
 }
 .top-trend p{
-    font-size: 20px;
+    font-size: 1.5em;
 }
 .Produced{
     margin: 3% 5%;
@@ -133,7 +132,7 @@ a{
     padding: 10px;
 }
 .Produced p{
-    font-size: 20px;
+    font-size: 1.5em;
 }
 
 a:hover{
@@ -146,6 +145,7 @@ a:hover{
     }
     .article{
         background: #cdcdcd;
+        height: 40vh;
     }
     
 }
