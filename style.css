@@ -82,7 +82,7 @@ a{
 }
 
 .cart{
-    margin: 30px;
+    margin: 3%;
     align-self: center;
     flex-grow: 1;
     text-align: center;
@@ -138,15 +138,23 @@ a{
 a:hover{
     color: black;
 }
-@media screen and (max-width:600px) {
-     
+@media screen and (max-width:700px) {
+    body{
+        font-size: 0.5em;
+     }
     nav{
         visibility: hidden;
     }
     .article{
-        background: #cdcdcd;
-        height: 40vh;
+        display: none;
     }
+    .cart img{
+        width: 200px;
+        height: 200px;
+        border-radius: 14px;
+    
+    }
+
     
 }
 
