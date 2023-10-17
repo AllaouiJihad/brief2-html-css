@@ -26,37 +26,30 @@ footer{
 .footer-info a{
     color: #707070;
 }
-.footer-email{
-    grid-area: email;
-    align-self: flex-end;
-    display: flex;
-    
-}
-.footer-email .link{
-    align-self: end;
-}
+
 
 
 .foot{
     flex-grow: 1;
-    grid-area: foot;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.footer-reseau{
-    grid-area: reseau;
+.footer-email{
     align-self: flex-end;
-    width: 150px;
     display: flex;
-    justify-content:  space-between;
+    
+}
+
+.footer-reseau{
+    align-self: flex-end;
+    display: flex;
+    max-width: 150px;
+    justify-content: space-between;
 }
 @media screen and (max-width:700px) {
     .footer-info{
         flex-direction: column;
-        align-items: center;
-    }
-    .foot{
         align-items: center;
     }
     .footer{
@@ -64,5 +57,13 @@ footer{
         font-size: 10px;
         flex-direction: column;
     }
-    
+
+    .foot{
+        width: 150px;
+        gap:2px;
+        align-self: center;
+    }
+    .foot .footer-email,.footer-reseau{
+        align-self: center;
+    }
 }
