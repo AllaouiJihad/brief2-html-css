@@ -4,16 +4,21 @@ header{
     margin-top: 3%;
     margin: 3% 5%;
 }
+#log2{
+    display: none;
+}
 .navbar{
     height: 12%;
     display: flex;
+    justify-content: space-between;
 }
 .logo{
-    width: 170px;
+    max-width: 170px;
     cursor: pointer;
 }
 nav{
-    flex: 1;
+    flex-grow: 1;
+    max-width: 50em;
     text-align: right;
 }
 nav ul{
@@ -24,3 +29,25 @@ nav ul li{
     flex-basis: 100px;    
     list-style: none;
 }
+.menu{
+    display: none;
+}
+@media screen and (max-width:700px) {
+   
+    nav {
+        display: none;
+    }
+    .menu{
+        display: inline-block;
+        align-self: center;
+    }
+    #log{
+        display: none;
+    }
+    #log2{
+        display: inline-block;
+        max-width: 50px;
+        max-height: 40px;
+    }
+}
+

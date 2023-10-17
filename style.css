@@ -1,5 +1,5 @@
 *{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     margin: 0;
     padding: 0;
     font-family: 'DM Sans';
@@ -38,7 +38,7 @@ a{
     gap: 10px;
 }
 .div1 h1{
-    font-size: 10em;
+    font-size: 7vw;
 }
 .btn{
     height: 50px;
@@ -67,6 +67,7 @@ a{
 
 }
 .container_cart_titre{
+    padding: 2%;
     display: flex;
     justify-content: space-between;
 }
@@ -105,54 +106,52 @@ a{
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 4%;
 }
-.about p{
-    font-size: 1.5em;
+p{
+    font-size: 3vh;
 }
 .top-trend{
     margin: 3% 5%;
     display: flex;
     flex-direction: column;
 }
-.top-trend img{
-    width: 100%;
-    padding: 10px;
-}
-.top-trend p{
-    font-size: 1.5em;
+
+p{
+    font-size: 3vh;
 }
 .Produced{
     margin: 3% 5%;
     display: flex;
     flex-direction: column;
 }
-.Produced img{
+img{
     width: 100%;
     padding: 10px;
-}
-.Produced p{
-    font-size: 1.5em;
 }
 
 a:hover{
     color: black;
 }
 @media screen and (max-width:700px) {
-    body{
-        font-size: 0.5em;
-     }
-    nav{
-        visibility: hidden;
-    }
     .article{
         display: none;
     }
     .cart img{
         width: 200px;
-        height: 200px;
-        border-radius: 14px;
-    
+        height: 200px;    
+    }
+    h1{
+        font-size: 1.5em;
+    }
+    h4{
+        font-size: 0.8em;
+    }
+    p{
+        font-size: 0.7em;
+    }
+    img{
+        height: 25vh;
     }
 
     
