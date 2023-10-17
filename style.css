@@ -75,18 +75,18 @@ a{
 }
 .produit{
     margin: 3% auto;
-    display: grid;
-    grid-template-columns: repeat(3,auto); 
-    grid-template-rows: repeat(2,auto);  
+    display: flex;  
+    flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 50px;
-
+   
 }
 
 .cart{
-    max-width: 300px;
-    display: grid;
-    gap: 6px;
+    margin: 30px;
+    min-width: 300px;
+    align-self: center;
+    flex-grow: 2;
+    text-align: center;
 
 }
 .cart img{
@@ -140,5 +140,11 @@ a{
 
 a:hover{
     color: black;
+}
+@media screen and (max-width:600px) {
+    nav{
+        visibility: hidden;
+    }
+    
 }
 
