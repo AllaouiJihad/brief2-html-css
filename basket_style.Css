@@ -1,5 +1,5 @@
 *{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     margin: 0;
     padding: 0;
     font-family: 'DM Sans';
@@ -25,65 +25,62 @@ main{
     width: 200px;
     background-color: transparent;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.5em;
     box-shadow: 3px 2px 6px 2px #e4e4e4;
     border: transparent;
     border-radius: 5px;
 }
 .table{
-    font-size: 30px;
-    display: grid;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
-    grid-template-columns: repeat(5,auto);
-    grid-template-rows: repeat(5,auto);
 }
-.table__title{
-    padding: 10px;
-    grid-column: 1/span 4;
-    padding-right: 30px;
-    grid-row: 1/2;
+.table__desc{
+    font-size: 0.6em;
+    max-width: 30rem;
+    gap: 15px;
     display: flex;
-    font-size: 35px;
-    justify-content: space-between;
+    flex-direction: column;
+
 }
-hr{
-    grid-row: 2/3   3/4;
-    grid-column: 1/6;
+.table__container{
+    display: flex;
+    gap: 10px;
+   
 }
-.table__info{
-    grid-column: 1/ span 5;
+.table__image img{
+    max-width: 170px;
+    max-height: 170px;
+}
+.desc__btn{
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 }
-select{
+
+.btn__qty span{
+    width: 30px;
     height: 30px;
-    width: 40px;
-    border: #A18A68;
-    font-size: 25px;
+    align-self: baseline;
+    font-size: 1em;
 }
-.info {
-    font-size: 20px;
-    margin-left: 20px;
-    color: #686AA1;
+.btn__qty a,span{
+    border: 2px solid #c5c2c2;
 }
-.img{
-    display: flex;
-    font-size: 15px;
-    
-}
-.table__info img{
-    width: 150px;
-    height: 150px;
+.desc__btn i{
+   
 }
 .cart{
     height: 40vh;
     margin: 20px auto;
     width: 80%;
-    padding: 30px 50px;
+    padding: 20px 10px;
     background-color: #DBDBDB;
     border: 1px solid #F4F4F4;
     border-radius: 10px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     font-size: 20px;
 
@@ -92,7 +89,8 @@ select{
     display: flex;
     flex-direction: column;
     justify-content:space-around ;
-    height: 150px;
+    
+    width: 100%;
 }
 .shipping h3{
     font-weight: bold;
@@ -101,7 +99,7 @@ select{
     font-size: 555px;
 
 }
-.total button{
+.container button{
     height: 50px;
     margin-top: 20px;
     background-color: #a16e68;
@@ -113,16 +111,63 @@ select{
     cursor: pointer;
     font-size: 20px;
 }
-.total1{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    height: 100px;
-    width: 250px;
+
+
+.col
+{
+  flex-grow: 50%;
+  padding: 10px 16px;
+  width: 100%;
 }
-.total__p{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.col h3{
+  padding: 10px 0;
+  color: #A18A68;
+}
+.container {
+    background-color: #f2f2f2;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    margin: auto;
+  }
+  span.price {
+    float: right;
     color: #7E7E7F;
+  }
+ .row{
+    display: flex;
+    justify-content: space-between;
+ }
+@media screen and (max-width:500px) {
+    .desc__text{
+        font-size: 0.6em;
+    }
+    a,span{
+        font-size: 0.6em;
+    }
+    .desc__btn{
+        flex-direction: column;
+    }
+    .table__image img{
+        max-width: 100px;
+        max-height: 100px;
+    }
+    .cart_title{
+        font-size: 0.8em;
+    }
+    .table__image{
+        align-self: center;
+    }
+    .shipping h3{
+        font-size:1em ;
+    }
+    .shipping label{
+        font-size:0.7em ;
+    }
+    .cart , .container{
+        background: transparent;
+        border: transparent;
+    }
+    h1{
+        font-size: 1.5em;
+    }
 }
