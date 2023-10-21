@@ -43,9 +43,7 @@ nav ul li{
     display: none;
     background: #f0f0f2;
    }
-   .nav.active {
-    display: block;
-}
+
     nav ul{
         flex-direction: column; 
     }

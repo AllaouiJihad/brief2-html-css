@@ -1,12 +1,7 @@
-// const menu = document.getElementsByClassName('menu');
-// const nav = document.getElementsByClassName('nav');
 
-// menu.addEventListener('click', () => {
-// navbarLinks.classList.toggle('active')
-// })
 
 let menu = document.getElementById('menu');
-let nav = document.getElementById('nav'); // Accédez au premier élément de la collection
+let nav = document.getElementById('nav'); 
 
 menu.addEventListener('click', function () {
     if (nav.style.display === "none") {
@@ -15,3 +10,5 @@ menu.addEventListener('click', function () {
         nav.style.display = "none";
     }
 });
+
+
