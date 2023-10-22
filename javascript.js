@@ -4,7 +4,7 @@
 // menu.addEventListener('click', () => {
 // navbarLinks.classList.toggle('active')
 // })
-
+// header
 let menu = document.getElementById('menu');
 let nav = document.getElementById('nav');
 
@@ -15,7 +15,7 @@ menu.addEventListener('click', function () {
         nav.style.display = "none";
     }
 });
-
+//page basket 
 let plus1 = document.getElementById('plus1');
 let input1 = document.getElementById('input1');
 let price = document.getElementById('price');
@@ -39,7 +39,7 @@ minus1.addEventListener('click',function(){
     totale1();
 });
 
-//
+
 let plus2 = document.getElementById('plus2');
 let input2 = document.getElementById('input2');
 
