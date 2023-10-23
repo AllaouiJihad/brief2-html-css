@@ -28,12 +28,12 @@ totale.innerHTML= parseInt(p1.innerHTML)+parseInt(p2.innerHTML)+'$';
  function totale1(){
     price1.innerHTML = (400*parseInt(input1.innerHTML)) + '$';
     p1.innerHTML=parseInt(price1.innerHTML)+ '$';
-    totale.innerHTML = parseInt(p2.innerHTML)+ parseInt(p1.innerHTML);
+    totale.innerHTML = parseInt(p2.innerHTML)+ parseInt(p1.innerHTML)+ '$';
   }
 function totale2(){
    price.innerHTML =(400*parseInt(input2.innerHTML)) + '$' ;
    p2.innerHTML=parseInt(price.innerHTML)+ '$';
-   totale.innerHTML = parseInt(p2.innerHTML)+ parseInt(p1.innerHTML);
+   totale.innerHTML = parseInt(p2.innerHTML)+ parseInt(p1.innerHTML)+'$';
 } 
 
 plus1.addEventListener('click',function(){
@@ -61,4 +61,6 @@ minus2.addEventListener('click',function(){
     input2.innerHTML = parseInt(input2.innerHTML) - 1;
     totale2();
 });
+
+let delete = document.getElementById('');
 
