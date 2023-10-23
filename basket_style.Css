@@ -57,6 +57,7 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+   
 }
 .btn__qty button {
     width: 30px;
@@ -66,7 +67,7 @@ main{
 .btn__qty button, .btn__qty span{
     border: 2px solid #c5c2c2;
     background: transparent;
-    align-self: baseline;
+    text-align: center;
     font-size: 1em;
 }
 
@@ -140,12 +141,23 @@ main{
     .desc__text{
         font-size: 0.6em;
     }
-    a,span,input{
+    main a,span,input{
         font-size: 0.6em;
     }
-    .btn__qty span{
-        align-self: baseline;
-        font-size: 0.7em;
+   
+    .btn__qty i{
+       font-size: 0.6em;
+    }
+    .btn__qty{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn__qty span, .btn__qty button{
+        align-self: center;
+        font-size: 0.6em;
+        width: 30px;
+        height: 30px;
     }
     .desc__btn{
         flex-direction: column;
