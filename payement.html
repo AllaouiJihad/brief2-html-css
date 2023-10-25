@@ -17,18 +17,19 @@
                 <img id="log" src="img/YouShope.svg" alt="">
                 <img id="log2" src="img/YS.svg" alt="">
             </div>
-            <nav>
+            <a  id="menu"><i class="fa-solid fa-bars" style="color: #A18A68;"></i></a>
+
+            <nav id="nav" class="nav">
                 <ul>
-                    <li class="li">Shop</li>
+                    <li>Shop</li>
                     <li>Blog</li>
                     <li>Our Story</li>
-                    <li>|</li>
+                    <li id="bar">|</li>
                     <li><a href="#" class="fa-solid fa-magnifying-glass" style="color: #000000;"></a></li>
-                    <li><a href="#" class="fa-solid fa-cart-shopping" style="color: #000000;"></a></li>
+                    <li><a href="basket.html" class="fa-solid fa-cart-shopping" style="color: #000000;"></a></li>
                     <li><a href="#" class="fa-regular fa-user" style="color: #030303;"></a></li>
                 </ul>
             </nav>
-            <a href="" class="menu"><i class="fa-solid fa-bars" style="color: #A18A68;"></i></a>
 
         </div>
     </header>
@@ -41,7 +42,7 @@
         <h2>Checkout Form</h2>
 <div class="row">
     <div class="container">
-      <form>
+      <form id="form" >
       
         <div class="row">
 
@@ -49,10 +50,13 @@
                 <h3>Billing Address</h3>
                 <label for="fname"><i class="fa fa-user"></i> Full Name</label>
                 <input type="text" name="firstname" placeholder="full name">
+                <small></small>
                 <label for="email"><i class="fa fa-envelope"></i> Email</label>
                 <input type="text"  name="email" placeholder="email @example.com">
+                <small></small>
                 <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
                 <input type="text"  name="address" placeholder="adresse">
+                <small></small>
                 <label for="city"><i class="fa fa-institution"></i> City</label>
                 <input type="text"  name="city" placeholder="City">
 
@@ -60,10 +64,12 @@
                 <div class="col">
                     <label for="state">State</label>
                     <input type="text" id="state" name="state" placeholder="NY">
+                    <small></small>
                 </div>
                 <div class="col">
                     <label for="zip">Zip</label>
                     <input type="text" id="zip" name="zip" placeholder="10001">
+                    <small></small>
                 </div>
                 </div>
           </div>
@@ -77,27 +83,28 @@
                 </div>
                 <label for="cname">Name on Card</label>
                 <input type="text" id="cname" name="cardname" placeholder=" Name on Card ">
+                <small></small>
                 <label for="ccnum">Credit card number</label>
                 <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                <small></small>
                 <label for="expmonth">Exp Month</label>
                 <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                <small></small>
                 <div class="row">
                 <div class="col">
                     <label for="expyear">Exp Year</label>
                     <input type="text" id="expyear" name="expyear" placeholder="2024">
+                    <small></small>
                 </div>
                 <div class="col">
                     <label for="cvv">CVV</label>
                     <input type="text" id="cvv" name="cvv" placeholder="352">
+                    <small></small>
                 </div>
                 </div>
           </div>
           
         </div>
-
-        <label>
-          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-        </label>
         <input type="submit" value="Continue to checkout" class="btn">
       </form>
 
@@ -108,10 +115,12 @@
 
   <div class="col">
     <div class="container">
-      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>1</b></span></h4>
-      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i></span></h4>
+      <p><a  href="#">Product 1</a> <span id="p1" class="price">400$</span></p>
+      <p><a  href="#">Product 1</a> <span id="p2" class="price">400$</span></p>
+
       <hr>
-      <p>Total <span class="price" style="color:black"><b>$15</b></span></p>
+      <p>Total <span class="price" id="Total" style="color:black"><b>800$</b></span></p>
     </div>
   </div>
 </div>
@@ -144,5 +153,6 @@
         
          
     </footer>
+    <script src="validation.js"></script>
 </body>
 </html>

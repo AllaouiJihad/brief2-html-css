@@ -31,12 +31,12 @@ let pro2 = document.getElementById('pro2')
 del.addEventListener('click',function(){
     product1.style.display ="none";
     pro1.style.display = "none";
-    totale.innerHTML= parseInt(p2.innerHTML);
+    totale.innerHTML= parseInt(p2.innerHTML)+'$';
 });
 del2.addEventListener('click',function(){
     product2.style.display ="none";
     pro2.style.display = "none";
-    totale.innerHTML= parseInt(p1.innerHTML);
+    totale.innerHTML= parseInt(p1.innerHTML)+'$';
 });
 function delete1(){
     totale.innerHTML= parseInt(p2.innerHTML) +'$';
@@ -99,3 +99,5 @@ minus2.addEventListener('click',function(){
     input2.innerHTML = parseInt(input2.innerHTML) - 1;
     totale2();
 });
+
+
